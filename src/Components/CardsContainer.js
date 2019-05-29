@@ -42,7 +42,7 @@ function ListOfProjects(props) {
             <div className="cardsList">
                 <div className="cardsImages">
                 <h3>{props.name}</h3>
-                    <img style={{ width: "100%"}} src={props.photo}/>
+                    <img style={{ width: "100%"}} src={props.photo} alt="shows preview of project"/>
                 </div>
                 <div className="cardsInfo">
                     <div className="description">

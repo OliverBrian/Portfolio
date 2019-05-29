@@ -43,7 +43,7 @@ function ListOfProjects(props) {
         return (
             <div className="showList">
                 <div className="techniquesImages">
-                    <img  src={props.photo}/>
+                    <img  src={props.photo} alt="skills/techhniques"/>
                     <p>{props.text}</p>
                 </div>
             </div>

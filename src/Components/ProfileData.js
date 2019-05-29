@@ -33,7 +33,7 @@ class ProfileData extends Component {
         
         return (
           <div className="treeHouseProgress">
-              <img src= {teamtreehouse} />
+              <img src= {teamtreehouse} alt="teamtreehouse logo"/>
               <h3>My progress on Treehouse looks like this so far:</h3>
                 <p>Total: {this.state.profilePoints}</p>
                 {/* <p>and {this.state.profiledata}</p> */}
