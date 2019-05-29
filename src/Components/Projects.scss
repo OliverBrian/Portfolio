@@ -1,0 +1,62 @@
+@import '../Variables.scss';
+
+.projectsContainer {
+    grid-area: container;
+    padding: 1em;
+    display: flex;
+    // width: 100%;
+    
+    .projectsBack {
+        background: $secondary-color-1;
+        height: 85vh;
+        // width: 100%;
+        box-shadow: $shadow-M;
+        overflow-y: scroll;
+       
+        // flex: display;
+        
+            .projectsHome {
+                position: absolute;
+                color: darken($secondary-color-5, 10%);
+                text-decoration: none;
+                top: 1.2em;
+                left: 1.5em;
+                @include for-size(desktop-up){
+                    top: 1.5em;
+                    font-size: 1.5em;
+                }
+                :hover {
+                    cursor: pointer;
+                    color: darken($secondary-color-5, 20%);
+                }
+            }
+        
+        .projectsContent {
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // padding: 1em;
+            // clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+            z-index: 10;
+            border: 1px solid white;
+            // width:100%;
+            .projectsHeader {
+                padding: 0 0 1em 0;
+                // clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+                h1 {
+                    letter-spacing: 0.2em;
+                    padding: 2em 0 0 0;
+                    font-weight: 300;
+                    color: darken($secondary-color-5, 30%);
+                }
+            }
+            .projectsBody {
+                padding: 0 1em;
+                width: 100%;
+            }
+        }
+
+        
+    }
+}

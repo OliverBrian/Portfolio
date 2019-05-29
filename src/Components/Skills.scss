@@ -1,0 +1,99 @@
+@import '../Variables.scss';
+
+.skillsContainer {
+    grid-area: container;
+    padding: 1em;
+    width: 100%;
+    // height: 90vh;
+    // display: flex;
+   
+ 
+    .skillsBack{
+        background: $secondary-color-1;
+        // display:flex;
+        box-shadow: $shadow-M;
+        height: 85vh;
+        // overflow: scroll;
+        overflow-y: scroll;
+        // width: 100%;
+        a {
+            position: absolute;
+            color: darken($secondary-color-5, 10%);
+            text-decoration: none;
+            top: 1.2em;
+            left: 1.5em;
+            @include for-size(desktop-up){
+                top: 1.5em;
+                font-size: 1.5em;
+            }
+            :hover {
+                cursor: pointer;
+                color: darken($secondary-color-5, 20%);
+            }
+        }
+        
+        .skillsContent {
+        // clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+        display: flex;
+        // background: $secondary-color-4;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        // border: 1px solid $secondary-color-4;
+        border: 1px solid white;
+        // width: 100%;
+        
+        // height: 100%;
+            .skillsHeader {
+                padding: 0 1em;
+                display:flex;
+                justify-content: center;
+                // height: 100%;
+                h1 {
+                    font-weight: 300;
+                    text-align: center;
+                    color: darken($secondary-color-5, 30%);
+                    line-height: 1.5em;
+                    padding: 2em 0 0 0;
+                    letter-spacing: 0.1em;
+                    @include for-size(desktop-up){
+                        font-size: 2em;
+                        padding: 2em 0 1em 0;
+                    }
+                }
+                
+            }
+            
+            hr {
+                margin-top: 0.5em;
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(
+                  to right,
+                  rgba(0, 0, 0, 0),
+                  #97a7b9,
+                  rgba(0, 0, 0, 0)
+                );
+                padding: 0;
+              }
+            
+            .skillsBody {
+                // display: flex;
+                // justify-content: center;
+                // flex-direction: column;
+                hr {
+                    margin-top: 0.5em;
+                    border: 0;
+                    height: 1px;
+                    background-image: linear-gradient(
+                      to right,
+                      rgba(0, 0, 0, 0),
+                      #97a7b9,
+                      rgba(0, 0, 0, 0)
+                    );
+                    padding: 0;
+                  }
+            }
+        }
+    }
+}

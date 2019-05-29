@@ -1,0 +1,34 @@
+$font-stack-1: 'Montserrat', sans-serif;
+$font-stack-2: 'Arapey', serif; 
+
+$primary-color-1: #3A608E;
+$primary-color-2: #30929A;
+$primary-color-3: #BCD0E5;
+$primary-color-4: #D7C2A6;
+$primary-color-5: #415326;
+
+$secondary-color-1: #1F1F1F;
+$secondary-color-2: #1A2D27;
+$secondary-color-3: #1C4A47;
+$secondary-color-4: #007261;
+$secondary-color-5: #B1D2DB;
+
+$shadow-S: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+$shadow-M: 0 10px 50px $secondary-color-3;
+
+$content-bg: url('./content-background.png');
+
+@mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 900px) { @content; }
+    } @else if $size == desktop-up {
+      @media (min-width: 1040px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) { @content; }
+    }
+  }
+  
