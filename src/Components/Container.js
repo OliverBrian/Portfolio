@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -12,9 +12,9 @@ const Container = ({ location }) => (
     <div className="container">
         <TransitionGroup className="transitionGroup">
             <CSSTransition
-                key={location.key}
-                timeout={{ enter: 300, exit: 300}}
-                classNames={'fade'}
+                key={location.pathname}
+                timeout={{ enter: 300, exit: 300 }}
+                classNames="fade"
                 >
                 <section className="routeSection">
                     <Switch location={location}>

@@ -12,7 +12,7 @@ class Skills extends Component {
         return (
             <div className="skillsContainer">
                 <div className="skillsBack">
-                    <Link to="/"><i className="fas fa-times-circle"></i></Link>
+                    <Link className="skillsHome" to="/"><i className="fas fa-times-circle"></i></Link>
                     <div className="skillsContent">
                         <div className="skillsHeader">
                                     <h1>Techniques and frameworks

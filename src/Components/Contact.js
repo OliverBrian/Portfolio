@@ -25,7 +25,7 @@ class Contact extends Component {
         return (
             <div className="contactContainer">
                 <div className="contactBack">
-                    <Link to="/"><i className="fas fa-times-circle"></i></Link>
+                    <Link className="contactHome" to="/"><i className="fas fa-times-circle"></i></Link>
                     <div className ="contactForm">
                         <div className="contactHeader">
                             <img src= { oliver } alt="face of owner" />
@@ -39,15 +39,15 @@ class Contact extends Component {
                                             type="text" 
                                             value={this.state.value} 
                                             onChange={this.handleChange}
-                                            placeholder=" Your first name"
+                                            placeholder="Your first name"
                                             />
                                         </div>
                                         <div>
                                             <input 
                                             type="lastName" 
-                                            value={this.state.value} 
+                                            // value={this.state.value} 
                                             onChange={this.handleChange}
-                                            placeholder=" Your last name"
+                                            placeholder="Your last name"
                                             />
                                         </div>
                                         </div>
@@ -56,7 +56,7 @@ class Contact extends Component {
                                             <input
                                             name="email"
                                             type="text"
-                                            value={this.state.value}
+                                            // value={this.state.value}
                                             onChange={this.handleChange}
                                             placeholder="Your email adress"
                                             />
@@ -65,7 +65,7 @@ class Contact extends Component {
                                             <input
                                             name="subject"
                                             type="text"
-                                            value={this.state.value}
+                                            // value={this.state.value}
                                             onChange={this.handleChange}
                                             placeholder="Subject"
                                             />
@@ -74,11 +74,11 @@ class Contact extends Component {
                                 <textarea
                                     name="message"
                                     type="text"
-                                    value={this.state.value}
+                                    // value={this.state.value}
                                     onChange={this.handleChange}
                                     placeholder="Message"
                                     />
-                                <div className="btn-submit" type="submit" value="Send message">
+                                <div className="btn-submit" type="submit" onClick={this.handleSubmit}>
                                     Send message
                                     </div>
                             </form>

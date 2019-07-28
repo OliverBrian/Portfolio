@@ -11,19 +11,20 @@
     .skillsBack{
         background: $secondary-color-1;
         // display:flex;
+        border-radius: 30px;
         box-shadow: $shadow-M;
         height: 85vh;
         // overflow: scroll;
         overflow-y: scroll;
         // width: 100%;
-        a {
+        .skillsHome {
             position: absolute;
             color: darken($secondary-color-5, 10%);
             text-decoration: none;
-            top: 1.2em;
-            left: 1.5em;
+            top: 5%;
+            left: 8%;
             @include for-size(desktop-up){
-                top: 1.5em;
+                left: 3%;
                 font-size: 1.5em;
             }
             :hover {
@@ -35,6 +36,7 @@
         .skillsContent {
         // clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
         display: flex;
+        border-radius: 30px;
         // background: $secondary-color-4;
         background: white;
         flex-direction: column;

@@ -4,6 +4,7 @@
     grid-area: container;
     // background-image: $content-bg;
     padding: 1em;
+    
     @include for-size(desktop-up){
     padding: 4em 7em;
     }

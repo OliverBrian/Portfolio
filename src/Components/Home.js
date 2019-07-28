@@ -11,7 +11,7 @@ class Home extends Component {
             <div className="content">
                 <div className="aboutContent">
                     <section className="profile">
-                        <img src= { oliverbrian } alt="image of the owner of this website"/>
+                        <img src= { oliverbrian } alt="the owner of this website"/>
                         <div className="profileContent">
                                 <h1>Web Developer {"\n"}In The Making</h1>
                                 <p>I'm a front-end developer student based in Stockholm, Sweden. {"\n"}

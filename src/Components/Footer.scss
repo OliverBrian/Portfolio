@@ -5,7 +5,7 @@
     background: $secondary-color-1;
     padding: 1em;
     @include for-size(desktop-up){
-        padding: 1.2em;
+        // padding: 1.2em;
     }
 
     .socialLinks {
@@ -15,6 +15,8 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        transition: transform 0.2s;
+        transition: 0.3s;
         a {
             text-decoration: none;
             i {
@@ -26,6 +28,7 @@
             }
             i:hover {
                 cursor: pointer;
+                transform: scale(1.10);
             }
         }
     }

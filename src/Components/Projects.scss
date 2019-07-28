@@ -12,6 +12,7 @@
         // width: 100%;
         box-shadow: $shadow-M;
         overflow-y: scroll;
+        border-radius: 30px;
        
         // flex: display;
         
@@ -19,10 +20,10 @@
                 position: absolute;
                 color: darken($secondary-color-5, 10%);
                 text-decoration: none;
-                top: 1.2em;
-                left: 1.5em;
+                top: 5%;
+                left: 8%;
                 @include for-size(desktop-up){
-                    top: 1.5em;
+                    left: 3%;
                     font-size: 1.5em;
                 }
                 :hover {
@@ -32,6 +33,7 @@
             }
         
         .projectsContent {
+            border-radius: 30px;
             background: white;
             display: flex;
             flex-direction: column;
