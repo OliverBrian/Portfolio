@@ -7,7 +7,7 @@
     // width: 100%;
     
     .projectsBack {
-        background: $secondary-color-1;
+        // background: $secondary-color-1;
         height: 85vh;
         // width: 100%;
         box-shadow: $shadow-M;
@@ -51,6 +51,10 @@
                     padding: 2em 0 0 0;
                     font-weight: 300;
                     color: darken($secondary-color-5, 30%);
+                    @include for-size(desktop-up){
+                        font-size: 2em;
+                        // padding: 2em 0 1em 0;
+                    }
                 }
             }
             .projectsBody {

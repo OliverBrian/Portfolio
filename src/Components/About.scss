@@ -7,7 +7,7 @@
     // height: 85vh;
     .aboutBack {
         background: $secondary-color-1;
-        // display:flex;
+        display:flex;
         border-radius: 30px;
         box-shadow: $shadow-M;
         height: 85vh;
@@ -33,17 +33,56 @@
         border-radius: 30px;
         // clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
         display: flex;
-        // background: $secondary-color-4;
-        background: white;
+        padding: 3em 0 3em 0;
+        background:no-repeat center, linear-gradient(45deg, #1a2d2700, #008c77);
+        // background: linear-gradient(45deg, #1a2d2700, #008c77) ;
+        // background-image: url('../Assets/bgabout.jpg');
+        background-size: 75%;
+        background-clip: content-box;
+        height: fit-content;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        // border: 1px solid $secondary-color-4;
-        border: 1px solid white;
+        text-align: left;
         width: 100%;
+        @include for-size(desktop-up){
+            padding: 5em 0 5em 0;
+            background: url('../Assets/bgabout.jpg') no-repeat center, linear-gradient(45deg, #1a2d2700, #008c77);
+            background-position: right;
+            background-size: 75%;
+            background-clip: content-box;
+            height: auto;
+            
+        }
             .aboutHeader {
-                // height: 15vh;
-                
+                padding: 1em 0 0 2em;
+                @include for-size(desktop-up){
+                    padding: 0 0 0 2em;
+                }
+                h1 {
+                    letter-spacing: 0.2em;
+                    padding: 0 0 0.5em 0;
+                    font-weight: 600;;
+                    color: darken($secondary-color-5, 10%);
+                    @include for-size(desktop-up){
+                        font-size: 2em;
+                        // padding: 2em 0 1em 0;
+                    }
+                }
+               
+            }
+            .aboutBody {
+                padding: 0 0 1em 2em;
+                @include for-size(desktop-up){
+                    padding: 0 0 0 2em;
+                }
+                p {
+                    width: 60%;
+                    line-height: 1.5em;
+                    font-size: 0.8em;
+                    color: $secondary-color-5;
+                    font-weight: 300;
+                }
+
             }
         }
     }

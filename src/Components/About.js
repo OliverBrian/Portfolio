@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../Assets/bgabout.jpg';
 import './About.scss';
 
 class About extends Component {
@@ -11,21 +10,26 @@ class About extends Component {
                   <Link className="aboutHome" to="/"><i className="fas fa-times-circle"></i></Link>
                     <div className="aboutContent">
                         <div className="aboutHeader">
-                            <h1>Hi, I'm Oliver Brian
+                            <h1>I am Oliver Brian
 
                             </h1>
                         </div>
                             <div className="aboutBody">
-                            <p> {"\n"}
+                            
+                                <p> 
+                                and I'm a front-end developer student with an eye for design and UX that recently finished my first year at KYH and are now looking
+                                for a place to do my internship or to work a part-time job in order to develop aquired skills. <br/>
                                 
-                                Nyfiken, motiverad och genuint intresserad av allt som har med programmering och utveckling att göra. 
-                                Pluggar till mitt framtida drömjobb på KYH yrkeshögskola för tillfället, och har precis avslutat mitt första år.
-                                Där har jag lärt mig en mängd med nya tekniker och utvecklat befintliga kompetenser inom Front End, 
-                                då främst inom HTML/CSS, Javascript, Reactjs, SASS, Nodejs, Firebase men har även nosat på Vue, Knex, PHP m.m. 
-                                Tanken är att jobba som Full Stack-utvecklare i framtiden. 
-                                Har tidigare studerat Ekonomi på SU och jobbat några år inom väktarbranchen. 
-                                Vill fördjupa mina kunskaper inom utveckling och hoppas kunna göra detta på nästa arbetsplats. Söker både deltid och heltid, men även praktikplats inför kommande HT-termin.
-                            </p>
+                                At school, I've learned and obtained several techniques and developed existing skills such as
+                                HTML/CSS, Javascript, Reactjs, SASS, Nodejs, Firebase, SQL<br/> but also a bit of Vuejs, Knex, PHP and more.
+                                <br/>
+                                I have a background in the the security industry where I worked for several years,
+                                <br/>I have also studied finance administration at Stockholms University for 2.5 years.<br/>
+                                I'm very passionate about what I do, and my passion in design combined with my eye for UX really shows in my work.
+                                <br/>
+                                My goal is to continue to learn and practice new techniques and to eventually grow into become a full-stack developer in the near future.
+                                
+                                </p>
                             </div>
                     </div>
                 </div>

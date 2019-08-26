@@ -9,12 +9,19 @@ $primary-color-5: #415326;
 
 $secondary-color-1: #1F1F1F;
 $secondary-color-2: #1A2D27;
-$secondary-color-3: #1C4A47;
+$secondary-color-3: #1c4a47; 
 $secondary-color-4: #007261;
 $secondary-color-5: #B1D2DB;
 
+$background-color: linear-gradient(210deg, rgb(22, 114, 105) 0%, rgb(22, 114, 105) 50%,rgb(89, 171, 135) 50%, rgb(89, 171, 135) 57%,rgb(67, 152, 125) 57%, rgb(67, 152, 125) 74%,rgb(44, 133, 115) 74%, rgb(44, 133, 115) 76%,rgb(134, 209, 155) 76%, rgb(134, 209, 155) 84%,rgb(156, 228, 165) 84%, rgb(156, 228, 165) 91%,rgb(111, 190, 145) 91%, rgb(111, 190, 145) 100%);
+$gradient-background: linear-gradient(to left,#1c4a47,#1A2D27);
+$gradient-background-2: linear-gradient(45deg,(#1A2D27),(#1c4a47));
+
+
+$background-actionbtn: linear-gradient(45deg,#1c4a47,rgb(22, 114, 105), rgb(89, 171, 135));
 $shadow-S: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
-$shadow-M: 0 10px 50px $secondary-color-3;
+$shadow-M: 0 1px 15px #1c4a474d;
+$shadow-L: 0 10px 50px #1c4a47;
 
 $content-bg: url('./content-background.png');
 

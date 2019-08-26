@@ -28,7 +28,7 @@ body {
         "container"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    // grid-template-rows: 1fr 6fr 1fr;
 
     @include for-size(desktop-up) {
             height: 100vh;

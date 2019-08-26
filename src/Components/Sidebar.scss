@@ -2,11 +2,11 @@
 
 .sidebar {
     grid-area: sidebar;
-    background: $secondary-color-1;
+    background: $background-color;
     padding: 0.5em;
     @include for-size(desktop-up){
         padding: 2em 0 0 0;
-        background: $secondary-color-3;
+        background: $background-color;
     }
       .navigation {
         display: flex;
@@ -24,6 +24,10 @@
             
             .active {
                 color: lighten($secondary-color-5, 10%);
+                @include for-size(desktop-up){
+                    // color: white;
+                    opacity: 1;
+                }
             }
             a {
                 color: $secondary-color-5;
@@ -34,7 +38,7 @@
                 padding: 0.1em 0;
                 font-size: 0.8em;
                 letter-spacing: 0.2em;
-                transition: transform 0.2s;
+                transition: all 0.2s;
                 
                 @include for-size(desktop-up){
                     font-size: 1.3em;
