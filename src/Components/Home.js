@@ -15,7 +15,7 @@ class Home extends Component {
                         <div className="profileContent">
                                 <h1>Web Developer <br/> In The Making</h1>
                                 <p>Hi there! I'm a front-end developer student based in Stockholm, Sweden.
-                                I'm passionate about design, have a creative mind and curiosity is my biggest strength.</p>
+                                 I'm passionate about design, have a creative mind and my greatest strength is my imagination.</p>
                                 
                                 <Link
                                 className="action-btn" to="/Contact">Work with me!</Link>

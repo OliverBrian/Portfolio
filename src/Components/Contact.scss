@@ -118,10 +118,10 @@
                         }
                     }
                     .btn-submit {
-                        color: lighten($secondary-color-5, 10%);
+                        color: #167269;
                         padding: 8px 16px;
                         font-size: 4vw;
-                        background-color: $secondary-color-4;
+                        background-color: #d4e5e7;
                         border: none;
                         box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
                         transition: background-color .4s ease-in, box-shadow .4s ease-in;
@@ -129,12 +129,17 @@
                         margin: 1em 0 0 0;
                         border-radius: 30px;
                         width: 80%;
+                        font-variant-caps: all-petite-caps;
+                        font-weight: bold;
                         @include for-size(desktop-up){
                             font-size:1.2em;
+                            width: 40%;
+                            transition: all 0.5s;
                         }
                         &:focus,
                         &:hover {
-                          background-color: lighten($secondary-color-4, 5%);
+                          transition: all 0.5s;
+                          width: 80%;
                           box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
                           cursor: pointer;
                         }

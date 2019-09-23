@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useSignUpForm } from './CustomHooks';
 import { Link } from 'react-router-dom';
 import './Contact.scss';
 import oliver from '../oliver.jpg';
 
-class Contact extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {value: ''};
-    
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-      }
-    
-      handleChange(event) {
-        this.setState({value: event.target.value});
-      }
-    
-      handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
-      }
 
-    render () {
+const Contact = () => {
+    const onContact = () => {
+        console.log(`Message sent!
+            Name: ${inputs.firstName} ${inputs.lastName}
+            Email: ${inputs.email}
+            Subject: ${inputs.subject}
+            Message: ${inputs.message
+            }`
+        );
+    };
+
+    const { inputs, handleInputChange, handleSubmit } =
+    useSignUpForm(onContact);
+
+        
         return (
+
             <div className="contactContainer">
                 <div className="contactBack">
                     <Link className="contactHome" to="/"><i className="fas fa-times-circle"></i></Link>
@@ -31,63 +30,68 @@ class Contact extends Component {
                             <img src= { oliver } alt="face of owner" />
                         </div>
                         <div className="contactBody">
-                            <form onSubmit={this.handleSubmit}>
+                            <form onSubmit={handleSubmit}>
                                 <div className="nameForm">
                                         <div>
                                             <input 
                                             name="firstName"
                                             type="text" 
-                                            value={this.state.value} 
-                                            onChange={this.handleChange}
+                                            onChange={handleInputChange}
+                                            value={inputs.firstName || ""}
                                             placeholder="Your first name"
+                                            required
                                             />
                                         </div>
                                         <div>
                                             <input 
-                                            type="lastName" 
-                                            // value={this.state.value} 
-                                            onChange={this.handleChange}
+                                            name="lastName"
+                                            type="text" 
+                                            onChange={handleInputChange}
+                                            value={inputs.lastName || ""}
                                             placeholder="Your last name"
+                                            required
                                             />
                                         </div>
                                         </div>
-                                <div className="emailSubjectForm">
-                                    <   div>
+                                    <div className="emailSubjectForm">
+                                        <div>
                                             <input
                                             name="email"
-                                            type="text"
-                                            // value={this.state.value}
-                                            onChange={this.handleChange}
+                                            type="email"
+                                            onChange={handleInputChange}
+                                            value={inputs.email || ""}
                                             placeholder="Your email adress"
+                                            required
                                             />
                                         </div>
                                         <div>
                                             <input
                                             name="subject"
                                             type="text"
-                                            // value={this.state.value}
-                                            onChange={this.handleChange}
+                                            onChange={handleInputChange}
+                                            value={inputs.subject || ""}
                                             placeholder="Subject"
+                                            required
                                             />
                                         </div>
                                     </div>
                                 <textarea
                                     name="message"
                                     type="text"
-                                    // value={this.state.value}
-                                    onChange={this.handleChange}
+                                    onChange={handleInputChange}
+                                    value={inputs.message || ""}
                                     placeholder="Message"
                                     />
-                                <div className="btn-submit" type="submit" onClick={this.handleSubmit}>
+                                <button className="btn-submit" type="submit">
                                     Send message
-                                    </div>
+                                    </button>
                             </form>
                         </div>
                     </div>  
                 </div>          
             </div>
         )
-    }
+    
 }
 
 export default Contact;
