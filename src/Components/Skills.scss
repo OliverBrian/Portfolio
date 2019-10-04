@@ -1,5 +1,6 @@
 @import '../Variables.scss';
-
+* {
+    font-variant: petite-caps;
 .skillsContainer {
     grid-area: container;
     padding: 2vh;
@@ -93,4 +94,5 @@
             }
         }
     }
+}
 }

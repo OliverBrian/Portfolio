@@ -1,5 +1,6 @@
 @import '../Variables.scss';
-
+* {
+    font-variant: petite-caps;
 .projectsContainer {
     grid-area: container;
     padding: 2vh;
@@ -63,4 +64,5 @@
 
         
     }
+}
 }

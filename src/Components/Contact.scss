@@ -85,6 +85,7 @@
                             border-right: 0;
                             border-bottom: 1px solid #eee;
                             border-left: 0;
+                            font-variant: petite-caps;
                             @include for-size(desktop-up){
                                 font-size: 1.2em;
                             }
@@ -105,6 +106,7 @@
                         border-bottom: 1px solid #eee;
                         border-left: 0;
                         resize: vertical;
+                        font-variant: petite-caps;
                         @include for-size(desktop-up){
                             font-size: 1.2em;
                             width: 100%;
@@ -126,6 +128,7 @@
                         margin: 1em 0 0 0;
                         border-radius: 30px;
                         width: 80%;
+                        font-variant: petite-caps;
                         @include for-size(desktop-up){
                             font-size: 2.5vmin;
                             width: 25vw;
