@@ -57,12 +57,13 @@
                     padding: 0 0 0 2em;
                 }
                 h1 {
+                    font-variant: petite-caps;
                     letter-spacing: 0.2em;
                     padding: 0 0 0.5em 0;
                     font-weight: 600;;
                     color: darken($secondary-color-5, 10%);
                     @include for-size(desktop-up){
-                        font-size: 2em;
+                        font-size: 5vmin;
                         // padding: 2em 0 1em 0;
                     }
                 }
@@ -74,11 +75,20 @@
                     padding: 0 0 0 2em;
                 }
                 p {
-                    width: 60%;
-                    line-height: 1.5em;
-                    font-size: 0.8em;
+                    font-variant: petite-caps;
+                    width: 70%;
+                    line-height: 2.5vh;
+                    font-size: 3vmin;
                     color: $secondary-color-5;
                     font-weight: 300;
+                    background: #00000080;
+                    border-radius: 5px;
+                    padding: 1vh 2vh;
+                    @include for-size(desktop-up){
+                    font-size: 2vmin;
+                    width: 60%;
+                    line-height: 3vh;
+                    }
                 }
 
             }
