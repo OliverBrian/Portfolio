@@ -4,6 +4,9 @@
     grid-area: sidebar;
     background: $background-color;
     padding: 0.5em;
+    box-shadow: 0 10px 35px rgba(50, 50, 93, 0.3),
+    0 2px 15px rgba(0, 0, 0, 0.3);
+
     @include for-size(desktop-up){
         padding: 2em 0 0 0;
         background: $background-color;
@@ -25,7 +28,7 @@
             .active {
                 color: lighten($secondary-color-5, 10%);
                 @include for-size(desktop-up){
-                    // color: white;
+                    
                     opacity: 1;
                 }
             }
@@ -33,24 +36,29 @@
                 color: $secondary-color-5;
                 font-weight: 700;
                 opacity: 0.7;
-                text-decoration: none;
-                transition: 0.3s;     
+                text-decoration: none;    
                 padding: 0.1em 0;
                 font-size: 0.8em;
                 letter-spacing: 0.2em;
                 transition: all 0.2s;
+                font-variant: petite-caps;
                 
                 @include for-size(desktop-up){
-                    font-size: 1.3em;
+                    font-size: 1.65vmax;
                     
                 }
             }
 
             a:hover {
                 opacity: 1;
-                transform: scale(1.10);
+                transform: scale3d(1.1, 1.1, 1);
                 cursor: pointer;
-            }  
+                // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+            }
+            a:active {
+                opacity: 1;
+                transform: scale3d(1.1, 1.1, 1);
+            } 
         }
     }
 }

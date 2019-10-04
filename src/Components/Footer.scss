@@ -4,6 +4,8 @@
     grid-area: footer;
     background: $secondary-color-3;
     padding: 1em;
+    box-shadow: 0 -10px 35px rgba(50, 50, 93, 0.3), 
+                0 -2px 15px rgba(0, 0, 0, 0.3);
     @include for-size(desktop-up){
         // padding: 1.2em;
     }
@@ -29,7 +31,7 @@
             }
             i:hover {
                 cursor: pointer;
-                transform: scale(1.10);
+                transform: scale3d(1.1, 1.1, 1);
             }
         }
     }

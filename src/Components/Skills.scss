@@ -2,21 +2,16 @@
 
 .skillsContainer {
     grid-area: container;
-    padding: 1em;
-    width: 100%;
-    // height: 90vh;
-    // display: flex;
+    padding: 2vh;
+    height: 100%;
    
  
     .skillsBack{
-        // background: $secondary-color-1;
-        // display:flex;
+        
         border-radius: 30px;
-        box-shadow: $shadow-M;
-        height: 85vh;
-        // overflow: scroll;
+        box-shadow: $shadow-L;
+        height: 100%;
         overflow-y: scroll;
-        // width: 100%;
         .skillsHome {
             position: absolute;
             color: darken($secondary-color-5, 10%);

@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: $primary-color-1;
+    background-color: rgba(221, 251, 246, 0.623);
     // height: 100vh;
     // width: 100vw;
     background-image: $content-bg;
@@ -28,8 +28,7 @@ body {
         "container"
         "footer";
     grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 6fr 1fr;
-
+    grid-template-rows: 1fr 90vh auto;
     @include for-size(desktop-up) {
             height: 100vh;
             grid-template-areas:

@@ -3,10 +3,11 @@
 .content {
     grid-area: container;
     // background-image: $content-bg;
-    padding: 1em;
-    
+    // padding: 1em;
+    padding: 5vh 3vh;
+    height: 100%;
     @include for-size(desktop-up){
-    padding: 4em 6em;
+    padding: 10vmin 20vmin;
     }
     .aboutContent {
 
@@ -14,19 +15,19 @@
             margin: 0 auto;
             text-align: center;
             @include for-size(desktop-up){
-                // margin: 2em auto;
+                
             }
         .profileContent {
+            padding: 3vh 0 0 0;
             @include for-size(desktop-up){
                 text-align: left;
                    
             }
         }
             img {
-                width: 50%;
+                width: 35vmin;
                 border-radius: 50%;
                 box-shadow: $shadow-L;
-                margin: 1em 0 0 0;
                 @include for-size(desktop-up){
                     width: 30%;
                     float: right;
@@ -34,44 +35,49 @@
                 }
             }
             h1 {
-                font-size: 2em;
+                font-size: 5.5vmax;
                 font-weight: 300;
-                color: $secondary-color-4;
-                margin: 0.5em auto;
+                color: $secondary-color-4;  
+                font-variant: petite-caps;
                 @include for-size(desktop-up){
-                    font-size: 3em;
-                    // width: 70%;
+                    font-size: 4.8vmax;
                     margin: 0;
                 }
             }
             p {
                 font-weight: 300;
-                line-height: 2em;
-                color: darken($secondary-color-4, 10%);
-                font-size: 1em; 
-                opacity: 0.5;
-                margin: 0.5em 0;
+                line-height: 5vh;
+                color: $secondary-color-4;
+                padding: 3vh 0;               
+                opacity: 0.8;
+                font-variant: petite-caps;
+                
                 @include for-size(desktop-up){
-                    font-size: 1.3em;
-                    width: 60%;
-                    line-height: 2.5em;
-                    margin: 0;
-                    padding: 0.5em 0;
+                    font-size: 2.7vmin;
+                    max-width: 65%;
+                    min-width: 60%;
+                    margin: auto 0;
+                    padding: 3vh 0 10vh 0;
                 }       
             }
             
                 .action-btn {
-                    display: inline-block;
+                    display: block;
+                    width: fit-content;
                     text-decoration: none;
+                    font-variant: petite-caps;
                     color: lighten($secondary-color-5, 10%);
-                    // font-weight: 700;
+                    padding: 0.5em 2em;
+                    border-radius: 40px;
+                    margin: auto;
+                    font-size: 2.7vmax;
+                    -webkit-transition: all 0.3s;
                     -webkit-animation: AnimationName 1s infinite alternate;
                     -moz-animation: AnimationName 1s infinite alternate;
                     animation: AnimationName 3s infinite alternate;
-
                     background-size: 200%;
-                    // background-position: left;
                     background-image: $background-actionbtn;
+                    box-shadow: $shadow-L;
                     @-webkit-keyframes AnimationName {
                         0%{background-position: left}
                        
@@ -88,23 +94,17 @@
                         100%{background-position:right}
                     }
 
-                    padding: 0.5em 2em;
-                    border-radius: 40px;
-                    margin: 0.5em 0;
-                    font-size: 1.2em;
-                    -webkit-transition: all 0.3s;
                     @include for-size(desktop-up){
-                        font-size: 1.25em;
-                        
+                        font-size: 2.7vmin;
+                        margin: 0;
                     }
         
                 }
               
                 .action-btn:hover {
-                    // transform: scale(1.05);
-                    box-shadow: $shadow-L;
                     color: white;
                     cursor: pointer;
+                    transform: scale3d(1.1, 1.1, 1);
                 }    
         }
     }

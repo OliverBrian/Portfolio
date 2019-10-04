@@ -3,18 +3,15 @@
 
 .contactContainer {
     grid-area: container;
-    // height: 90vh;
-    padding: 1em;
-    // width: 100%;
-    // display:flex;
+    padding: 2vh;
+    height: 100%;
     
     .contactBack {
-        // background: $secondary-color-1;
         display: flex;
         border-radius: 30px;
-        box-shadow: $shadow-M;
-        height: 85vh;
-        width: 100%;
+        box-shadow: $shadow-L;
+        height: 100%;
+  
         .contactHome {
             position: absolute;
             color: darken($secondary-color-5,10%);
@@ -58,10 +55,10 @@
             width: 100%;
            
             form {
-                // width: 100%;
+                
                 display: flex;
                 flex-direction: column;
-                // justify-content: center;
+                
                 padding: 0.5em 0;
                 align-items: center;
                 @include for-size(desktop-up){
@@ -129,11 +126,9 @@
                         margin: 1em 0 0 0;
                         border-radius: 30px;
                         width: 80%;
-                        font-variant-caps: all-petite-caps;
-                        font-weight: bold;
                         @include for-size(desktop-up){
-                            font-size:1.2em;
-                            width: 40%;
+                            font-size: 2.5vmin;
+                            width: 25vw;
                             transition: all 0.5s;
                         }
                         &:focus,
