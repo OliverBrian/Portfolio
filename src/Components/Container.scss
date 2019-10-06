@@ -2,8 +2,10 @@
 
 .container {
     grid-area: container;
-    // height: 90vh;
     height: 100%;
+    background: #66666621;
+    display:block;
+    position: relative;
     @include for-size(desktop-up){
      
     }
@@ -24,6 +26,9 @@
     opacity: 0.01;
     transition: opacity 300ms ease-in;
     }
+
+   
+
 .transitionGroup {
     
     position: relative;
@@ -44,4 +49,22 @@
                 }
             
         }   
+    }
+
+    .container::after {
+        position: absolute;
+        content: "";
+        background: $content-bg;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200% 100%;
+        opacity: 0.8;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        @include for-size(desktop-up){
+            background-size: 100% 100%;
+        }
     }

@@ -3,12 +3,12 @@
 .sidebar {
     grid-area: sidebar;
     background: $background-color;
-    padding: 0.5em;
     box-shadow: 0 10px 35px rgba(50, 50, 93, 0.3),
     0 2px 15px rgba(0, 0, 0, 0.3);
+    padding: 1vh 0;
 
     @include for-size(desktop-up){
-        padding: 2em 0 0 0;
+
         background: $background-color;
     }
       .navigation {

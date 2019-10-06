@@ -27,7 +27,8 @@ $shadow-L: 0 10px 35px rgba(50, 50, 93, 0.3),
 
 $shadow-T: 0 1px 50px rgba(50, 50, 93, 0.3), 
            0 2px 5px rgba(0, 0, 0, 0.3);
-$content-bg: url('./content-background.png');
+// $content-bg: url('./content-background.png');
+$content-bg: url('../Assets/table.png');
 
 @mixin for-size($size) {
     @if $size == phone-only {

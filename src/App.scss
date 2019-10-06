@@ -11,12 +11,25 @@
 }
 
 body {
-    background-color: rgba(221, 251, 246, 0.623);
-    // height: 100vh;
-    // width: 100vw;
-    background-image: $content-bg;
-    
+    background-color: rgba(255, 255, 255, 0.623);
+    // position: relative;
+    display: block;
+
 }
+// body::after {
+//     // position: absolute;
+//     // content: "";
+//     // background: $content-bg;
+//     // background-repeat: no-repeat;
+//     // background-position: center;
+//     // background-size: cover;
+//     // opacity: 0.3;
+//     // top: 0;
+//     // bottom: 0;
+//     // left: 0;
+//     // right: 0;
+//     // z-index: -1;
+// }
 
 .mainContainer {
     font-size: 1.2em;
