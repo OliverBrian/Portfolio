@@ -28,9 +28,9 @@ const projects = [{
 },
 {
     photo: workbuster,
-    name: "Workbuster",
-    desc: "Team project where we worked with an actual company, Workbuster. Techniques used: SQL, Vue, KOA and KNEX",
-    URL: "https://github.com/Naicah/KYH_Workbuster"
+    name: "Retargeting App",
+    desc: "Team project where we worked with an actual company. Techniques used: SQL, Vue, KOA and KNEX",
+    URL: "https://github.com/Naicah/Retargeting_app"
 }
 ]
 
@@ -39,7 +39,7 @@ function ListOfProjects(props) {
      
         return (
             <Fragment>
-            <div className="cardsList">
+            {/* <div className="cardsList">
                 <div className="cardsImages">
                 <h3>{props.name}</h3>
                     <img style={{ width: "100%"}} src={props.photo} alt="shows preview of project"/>
@@ -58,7 +58,31 @@ function ListOfProjects(props) {
                 </div>
                 </div>
             </div>
-            <hr />
+            <hr /> */}
+                <div className="cardsList">
+                    <div class="card">
+                        <div class="cardInner">
+                            <div class="cardFront">
+                                <div className="hexagonIcon">
+                                <h3>{props.name}</h3>
+                                </div>
+                            <img src={props.photo} alt="shows preview of project"/>
+                                
+                            </div>
+                            <div class="cardBack">
+                                
+                                <p>{props.desc}</p>
+                                <div className="github">
+                                <a href={props.URL} target='blank'>
+                                {/* <p>GIT HUB</p> */}
+                                <i className="fab fa-github-square"/>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </Fragment>
             
             
@@ -69,7 +93,7 @@ function ListOfProjects(props) {
 class CardsContainer extends Component{
     render() {
         return(
-            <div className="cards">
+            <div className="cardsListContainer">
    
                     {projects.map(props =>
                     <ListOfProjects

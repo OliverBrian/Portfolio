@@ -16,10 +16,11 @@
             position: absolute;
             color: lighten($secondary-color-5, 10%);
             text-decoration: none;
-            top: 5%;
-            left: 8%;
+            top: 8vmin;
+            left: 8vmin;
             @include for-size(desktop-up){
-                left: 3%;
+                left: 5vmin;
+                top: 5vmin;
                 font-size: 1.5em;
             }
             :hover {
