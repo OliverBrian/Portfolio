@@ -14,7 +14,6 @@
         .card {
             // perspective: 1000px;
             // -webkit-perspective: 1000px;
-            display: block;
             background-color: transparent;
             height: 20vmax;
             width: 37.5vmax;
@@ -122,8 +121,7 @@
                     height: 100%;
                     border-radius: 10px;
                     box-shadow: $shadow-M;
-                    -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden;
+
             }
             }    
         }
