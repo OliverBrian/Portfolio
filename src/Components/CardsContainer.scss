@@ -72,6 +72,8 @@
                         height: 100%;
                         border-radius: 10px; 
                         border: inset transparent;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
                     }
                 }
                 .cardBack {
@@ -120,8 +122,7 @@
                     height: 100%;
                     border-radius: 10px;
                     box-shadow: $shadow-M;
-                    // -webkit-backface-visibility: hidden;
-                    // backface-visibility: hidden;
+                    
             }
             }    
         }
