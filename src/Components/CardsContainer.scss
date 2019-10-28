@@ -60,8 +60,8 @@
                     // transition: all 0.2s;
                     // transform-style: preserve-3d;
                     // -webkit-transform-style: preserve-3d;
-                    // -webkit-backface-visibility: hidden;
-                    // backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
                     @include for-size(desktop-up){
                         font-size: 1.3vmax;
                         
